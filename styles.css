@@ -1,0 +1,57 @@
+body {
+  background-color: #7b0828;
+  margin: 0;
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  transform: scale(3);
+}
+
+.calendar {
+  fill: #f0f0c9;
+  font-family: "Arial", sans-serif;
+  text-anchor: middle; /*Center text with coordinate*/
+  cursor: pointer;
+  user-select: none;
+}
+
+.minute-marker {
+  fill: transparent;
+  stroke: #0f0e0e;
+  stroke-width: 7;
+  stroke-dasharray: 0.2 0.8;
+  stroke-dashoffset: 0.1;
+}
+
+.hour-marker {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 7;
+  stroke-dasharray: 0.04 0.96;
+  stroke-dashoffset: 0.02;
+}
+
+.hand {
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.hand-thick {
+  stroke-width: 7;
+}
+
+.hand-second {
+  stroke: yellow;
+}
+
+.center-circle {
+  fill: #7b0828;
+  stroke-width: 2;
+  stroke: #fff;
+}

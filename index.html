@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>SVG Clock</title>
+  </head>
+  <body>
+    <svg class="clock" width="200" height="200" viewBox="-100 -100 200 200">
+      <circle class="minute-marker" cx="0" cy="0" r="90" pathLength="60" />
+      <circle class="hour-marker" r="90" pathLength="12" />
+
+      <text id="calendar" class="calendar" x="45" y="5">00</text>
+
+      <g id="hour_hand">
+        <line class="hand" x1="0" y1="0" x2="0" y2="-50" />
+        <line class="hand hand-thick" x1="0" y1="-12" x2="0" y2="-50" />
+      </g>
+
+      <g id="minute_hand">
+        <line class="hand" x1="0" y1="0" x2="0" y2="-80" />
+        <line class="hand hand-thick" x1="0" y1="-12" x2="0" y2="-80" />
+      </g>
+
+      <g id="second_hand">
+        <line class="hand hand-second" x1="0" y1="12" x2="0" y2="-80" />
+      </g>
+
+      <circle class="center-circle" r="3" />
+    </svg>
+  </body>
+</html>
