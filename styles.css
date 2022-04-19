@@ -1,5 +1,5 @@
 body {
-  background-color: #7b0828;
+  background-color: #041f3a;
   margin: 0;
 
   height: 100vh;
@@ -51,7 +51,7 @@ body {
 }
 
 .center-circle {
-  fill: #7b0828;
+  fill: #041f3a;
   stroke-width: 2;
   stroke: #fff;
 }
