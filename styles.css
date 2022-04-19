@@ -1,5 +1,5 @@
 body {
-  background-color: #041f3a;
+  background-color: #776642;
   margin: 0;
 
   height: 100vh;
@@ -9,49 +9,70 @@ body {
 }
 
 .clock {
-  transform: scale(3);
+  transform: scale(5);
 }
 
 .calendar {
-  fill: #f0f0c9;
+  fill: #1c1c0f;
   font-family: "Arial", sans-serif;
+  font-weight: 700;
   text-anchor: middle; /*Center text with coordinate*/
   cursor: pointer;
   user-select: none;
 }
 
+.clock-border {
+  fill: transparent;
+  stroke: #443516;
+  stroke-width: 9;
+}
+
+.clock-border-black {
+  fill: transparent;
+  stroke: #1c1a12;
+  stroke-width: 1;
+}
+
+.clock-border-brown {
+  fill: transparent;
+  stroke: #a19455;
+  opacity: 70%;
+  stroke-width: 1;
+}
+
 .minute-marker {
   fill: transparent;
-  stroke: #0f0e0e;
-  stroke-width: 7;
-  stroke-dasharray: 0.2 0.8;
-  stroke-dashoffset: 0.1;
+  stroke: #1c1a12;
+  stroke-width: 9;
+  stroke-dasharray: 0.05 0.95;
+  stroke-dashoffset: 1;
 }
 
 .hour-marker {
   fill: transparent;
-  stroke: #fff;
-  stroke-width: 7;
+  stroke: #1c1a12;
+  stroke-width: 9;
   stroke-dasharray: 0.04 0.96;
-  stroke-dashoffset: 0.02;
+  stroke-dashoffset: 0.01;
 }
 
 .hand {
-  stroke: #fff;
+  stroke: #1c1a12;
   stroke-width: 2;
-  stroke-linecap: round;
+  stroke-linecap: butt;
 }
 
 .hand-thick {
-  stroke-width: 7;
+  stroke-width: 4;
 }
 
 .hand-second {
-  stroke: yellow;
+  stroke: #1c1a12;
+  stroke-width: 1;
 }
 
 .center-circle {
-  fill: #041f3a;
+  fill: #776642;
   stroke-width: 2;
-  stroke: #fff;
+  stroke: #1c1a12;
 }
